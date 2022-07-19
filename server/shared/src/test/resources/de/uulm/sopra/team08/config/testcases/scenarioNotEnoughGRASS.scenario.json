@@ -1,0 +1,41 @@
+{
+  "scenario": [
+    [
+      "GRASS",
+      "GRASS",
+      "ROCK",
+      "GRASS",
+      "GRASS"
+    ],
+    [
+      "GRASS",
+      "GRASS",
+      "ROCK",
+      "GRASS",
+      "GRASS"
+    ],
+    [
+      "GRASS",
+      "GRASS",
+      "GRASS",
+      "GRASS",
+      "GRASS"
+    ],
+    [
+      "ROCK",
+      "ROCK",
+      "GRASS",
+      "GRASS",
+      "GRASS"
+    ],
+    [
+      "GRASS",
+      "ROCK",
+      "GRASS",
+      "ROCK",
+      "GRASS"
+    ]
+  ],
+  "author": "Alice",
+  "name": "examplescenarioconfig"
+}

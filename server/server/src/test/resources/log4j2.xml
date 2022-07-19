@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import org.apache.logging.log4j.core.layout.PatternLayout?>
+<?import org.apache.logging.log4j.core.config.Loggers?>
+<?import org.apache.logging.log4j.core.config.AppenderRef?>
+
+<!-- Pattern: https://logging.apache.org/log4j/log4j-2.0/manual/layouts.html#PatternLayout -->
+<!-- 1 File for net, 1 File for all, 1File for error-->
+
+<Configuration status="WARN">
+
+    <Appenders>
+
+        <!-- WARN, ERROR, FATAL -->
+        <Console name="errorConsole" target="SYSTEM_ERR">
+            <filters>
+                <!-- only for WARN, ERROR and FATAL -->
+                <ThresholdFilter level="WARN" onMatch="ACCEPT" onMismatch="DENY"/>
+            </filters>
+            <PatternLayout
+                    pattern="[%d{HH:mm:ss}] [%p] [%t] [%c{1}:%L]%notEmpty{ [%marker]}: %m%n%throwable"
+                    disableAnsi="false"
+                    noConsoleNoAnsi="false"
+            />
+        </Console>
+
+        <!-- INFO -->
+        <Console name="normalConsole">
+            <filters>
+                <!-- only for INFO -->
+                <ThresholdFilter level="WARN" onMatch="DENY" onMismatch="NEUTRAL"/>
+                <ThresholdFilter level="INFO" onMatch="ACCEPT" onMismatch="DENY"/>
+            </filters>
+            <PatternLayout
+                    pattern="[%d{HH:mm:ss}] [%p] [%t] [%c{1}]%notEmpty{ [%marker]}: %m%n%throwable"
+                    disableAnsi="false"
+                    noConsoleNoAnsi="false"
+            />
+        </Console>
+
+        <!-- DEBUG, TRACE -->
+        <Console name="debugConsole">
+            <filters>
+                <!-- only for DEBUG and TRACE-->
+                <ThresholdFilter level="INFO" onMatch="DENY" onMismatch="ACCEPT"/>
+            </filters>
+            <PatternLayout
+                    pattern="[%d{HH:mm:ss}] [%p] [%t] [%c{1}:%L]%notEmpty{ [%marker]}: %m%n%throwable"
+                    disableAnsi="false"
+                    noConsoleNoAnsi="false"
+            />
+        </Console>
+
+    </Appenders>
+
+    <Loggers>
+
+        <Root level="trace">
+            <AppenderRef ref="errorConsole"/>
+            <AppenderRef ref="normalConsole"/>
+            <AppenderRef ref="debugConsole"/>
+        </Root>
+    </Loggers>
+
+</Configuration>

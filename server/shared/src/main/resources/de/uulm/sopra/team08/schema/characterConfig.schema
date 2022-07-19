@@ -1,0 +1,77 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "characters": {
+      "type": "array",
+		"uniqueItems": true,
+      "title": "characterArray",
+      "minItems": 24,
+	  "maxItems": 24,
+      "description": "Das Array an Character Descriptions",
+      "items": {
+        "type": "object",
+        "properties": {
+		  "characterID": {
+            "type": "integer",
+			"minimum": 1,
+			"maximum": 24,
+			"uniqueItems": true,
+            "title": "characterID",
+            "description": "Eine ID, die es erleichtert einem Character eine grafische Darstellung zuzuordnen. Darf nicht doppelt vorkommen."
+          },
+          "name": {
+            "type": "string",
+			"uniqueItems": true,
+            "title": "charakterName",
+            "description": "Der Name des Charakters"
+          },
+          "HP": {
+            "type": "integer",
+            "title": "healtPoints",
+            "description": "Die Anzahl der Lebenspunkte des Charakters"
+          },
+          "MP": {
+            "type": "integer",
+            "title": "movementPoints",
+            "description": "Die Anzahl der Bewegungspunkte des Charakters"
+          },
+          "AP": {
+            "type": "integer",
+            "title": "actionPoints",
+            "description": "Die Anzahl der Aktionspunkte des Charakters"
+          },
+          "meleeDamage": {
+            "type": "integer",
+            "title": "meeleDamage",
+            "description": "Der Nahkampfschaden des Charakters"
+          },
+          "rangeCombatDamage": {
+            "type": "integer",
+            "title": "rangeCombatDamage",
+            "description": "Der Fernkampfschaden des Charakters"
+          },
+          "rangeCombatReach": {
+            "type": "integer",
+            "title": "rangeCombatReach",
+            "description": "Die Reichweite des Fernkampfschadens des Charakters"
+          }
+        },
+        "required": [
+		  "characterID",
+          "name",
+          "HP",
+          "MP",
+          "AP",
+          "meleeDamage",
+          "rangeCombatDamage",
+          "rangeCombatReach"
+        ]
+      }
+    }
+  },
+  "required": [
+    "characters"
+  ]
+}
+

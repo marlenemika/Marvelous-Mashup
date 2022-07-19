@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d3f68537dad4248b9538752201fed24, type: 3}
+  m_Name: StatisticsObject
+  m_EditorClassIdentifier: 
+  playerWon: 0
+  playerOne: Player One
+  playerTwo: Player Two
+  hp1: 0
+  hp2: 0
+  actions1: 0
+  actions2: 0
+  infSt1: 0
+  infSt2: 0
+  useInf1: 0
+  useInf2: 0
+  attacks1: 0
+  attacks2: 0

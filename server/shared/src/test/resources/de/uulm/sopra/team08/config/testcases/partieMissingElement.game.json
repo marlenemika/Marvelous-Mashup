@@ -1,0 +1,14 @@
+{
+  "maxRounds": 30,
+  "maxRoundTime": 300,
+  "maxGameTime": 1800,
+  "maxAnimationTime": 50,
+  "spaceStoneCD": 2,
+  "mindStoneCD": 1,
+  "realityStoneCD": 3,
+  "powerStoneCD": 1,
+  "timeStoneCD": 5,
+  "mindStoneDMG": 12,
+  "maxPauseTime": 60,
+  "maxResponseTime": 20
+}

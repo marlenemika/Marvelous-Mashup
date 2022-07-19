@@ -1,0 +1,74 @@
+{
+"$schema":"http://json-schema.org/draft-04/schema#",
+"title": "Partiekonfiguration",
+"description": "A Gameconfiguration to play a game of Marvelous Mashup.",
+"type": "object",
+"properties": {
+"maxRounds": {
+"description": "Maximum amount of rounds played until Thanos appears. Using 0 will result in Thanos never appearing. Example: maxRounds=5 -> Thanos will appear at the start of round 5.",
+"type": "integer"
+},
+"maxRoundTime": {
+"description": "Time window in which the player can use/move one of their Heros. Time is measured in seconds, time will not continue during a pause.",
+"type": "integer"
+},
+"maxGameTime": {
+"description": "Optional: Maximum time to play the game, once the time runs out Thanos will spawn in the following round. Using 0 will result in no Time limit. Time is measured in seconds.",
+"type": "integer"
+},
+"maxAnimationTime": {
+"description": "Maximum time until the animation is done. Using 0 will result in no time limit. Time is measured in seconds.",
+"type": "integer"
+},
+"spaceStoneCD": {
+"description": "Cooldown for Space Stone. Cooldown measured in rounds.",
+"type": "integer"
+},
+"mindStoneCD": {
+"description": "Cooldown for Mind Stone. Cooldown measured in rounds.",
+"type": "integer"
+},
+"realityStoneCD": {
+"description": "Cooldown for Reality Stone. Cooldown measured in rounds.",
+"type": "integer"
+},
+"powerStoneCD": {
+"description": "Cooldown for Power Stone. Cooldown measured in rounds.",
+"type": "integer"
+},
+"timeStoneCD": {
+"description": "Cooldown for Time Stone. Cooldown measured in rounds.",
+"type": "integer"
+},
+"soulStoneCD": {
+"description": "Cooldown for Soul Stone. Cooldown measured in rounds.",
+"type": "integer"
+},
+"mindStoneDMG": {
+"description": "Damage Value of Mind Stone.",
+"type": "integer"
+},
+"maxPauseTime": {
+"description": "Timelimit for a pause. A disconnect from the game will result in a pause. Using 0 means no pauses are allowed. Time is measured in seconds.",
+"type": "integer"
+},
+"maxResponseTime": {
+"description": "Duration the Server waits for a Response of a Client before a Timeout. Based on Usage of keep-alives.",
+"type": "integer"
+}
+},
+"required": [
+"maxRounds",
+"maxRoundTime",
+"maxAnimationTime",
+"spaceStoneCD",
+"mindStoneCD",
+"realityStoneCD",
+"powerStoneCD",
+"timeStoneCD",
+"soulStoneCD",
+"mindStoneDMG",
+"maxPauseTime",
+"maxResponseTime"
+]
+}

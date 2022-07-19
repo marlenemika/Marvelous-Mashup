@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Run both AI clients" type="CompoundRunConfigurationType">
+    <toRun name="ClientOne" type="DotNetProject" />
+    <toRun name="ClientTwo" type="DotNetProject" />
+    <method v="2" />
+  </configuration>
+</component>

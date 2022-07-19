@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Music
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Grass
+  - Entities
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Grass
+    uniqueID: 144899197
+    locked: 0
+  - name: Rocks
+    uniqueID: 2667529541
+    locked: 0
+  - name: Portals
+    uniqueID: 738351449
+    locked: 0
+  - name: Infinty Stones
+    uniqueID: 2124457119
+    locked: 0
+  - name: Highlighting
+    uniqueID: 3945907525
+    locked: 0
+  - name: Characters
+    uniqueID: 3173467947
+    locked: 0
+  - name: Character Information
+    uniqueID: 3984649353
+    locked: 0
+  - name: UI
+    uniqueID: 3752721647
+    locked: 0

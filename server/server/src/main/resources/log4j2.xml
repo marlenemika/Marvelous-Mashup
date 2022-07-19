@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import org.apache.logging.log4j.core.layout.PatternLayout?>
+<?import org.apache.logging.log4j.core.config.Loggers?>
+<?import org.apache.logging.log4j.core.config.AppenderRef?>
+
+<!-- Pattern: https://logging.apache.org/log4j/log4j-2.0/manual/layouts.html#PatternLayout -->
+<!-- 1 File for net, 1 File for all, 1 File for error -->
+
+<Configuration status="WARN">
+
+    <Appenders>
+        <!-- Console: WARN, ERROR, FATAL -->
+        <Console name="errorConsole" target="SYSTEM_ERR">
+            <filters>
+                <!-- only for WARN, ERROR and FATAL -->
+                <ThresholdFilter level="WARN" onMatch="ACCEPT" onMismatch="DENY"/>
+            </filters>
+            <PatternLayout
+                    pattern="[%d{HH:mm:ss}] [%-5p] [%t] [%c{1}:%L]%notEmpty{ [%marker]}: %m%n%throwable"
+                    disableAnsi="false"
+                    noConsoleNoAnsi="false"
+            />
+        </Console>
+
+        <!-- Console: INFO, DEBUG, TRACE -->
+        <Console name="normalConsole">
+            <filters>
+                <!-- only for INFO, DEBUG, TRACE -->
+                <ThresholdFilter level="WARN" onMatch="DENY" onMismatch="ACCEPT"/>
+            </filters>
+            <PatternLayout
+                    pattern="[%d{HH:mm:ss}] [%-5p] [%t] [%c{1}:%L]%notEmpty{ [%marker]}: %m%n%throwable"
+                    disableAnsi="false"
+                    noConsoleNoAnsi="false"
+            />
+        </Console>
+
+        <!-- File: All -->
+        <File name="fileAll" fileName="./logs/Server.log" append="false" bufferedIO="true">
+            <PatternLayout
+                    pattern="[%d{HH:mm:ss}] [%-5p] [%t] [%c{1}:%L]%notEmpty{ [%marker]}: %m%n%throwable"
+            />
+        </File>
+
+        <!-- File: Team08-All -->
+        <File name="fileTeam08All" fileName="./logs/Team08.log" append="false" bufferedIO="true">
+            <PatternLayout
+                    pattern="[%d{HH:mm:ss}] [%-5p] [%t] [%c{1}:%L]%notEmpty{ [%marker]}: %m%n%throwable"
+            />
+        </File>
+
+        <!-- File: ERROR -->
+        <File name="fileError" fileName="./logs/Error.log" append="false">
+            <ThresholdFilter level="WARN" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout
+                    pattern="[%d{HH:mm:ss}] [%-5p] [%t] [%c{1}:%L]%notEmpty{ [%marker]}: %m%n%throwable"
+            />
+        </File>
+
+        <!-- File NET -->
+        <File name="fileNetwork" fileName="./logs/Network.log" append="false" bufferedIO="true">
+            <PatternLayout
+                    pattern="[%d{HH:mm:ss}] [%-5p] [%t] [%c{1}:%L]%notEmpty{ [%marker]}: %m%n%throwable"
+            />
+        </File>
+
+    </Appenders>
+
+    <Loggers>
+        <!-- WebSocket -->
+        <Logger name="org.java_websocket">
+            <AppenderRef ref="fileNetwork"/>
+        </Logger>
+
+        <!-- Team08-Network -->
+        <Logger name="de.uulm.sopra.team08.server.net">
+            <AppenderRef ref="fileNetwork"/>
+        </Logger>
+
+        <!-- Team08-Server -->
+        <Logger name="de.uulm.sopra.team08">
+            <AppenderRef ref="fileTeam08All"/>
+        </Logger>
+
+        <Root level="info">
+            <!-- Consoles -->
+            <AppenderRef ref="errorConsole"/>
+            <AppenderRef ref="normalConsole"/>
+
+            <!-- Files (non-specific) -->
+            <AppenderRef ref="fileAll"/>
+            <AppenderRef ref="fileError"/>
+        </Root>
+    </Loggers>
+
+</Configuration>

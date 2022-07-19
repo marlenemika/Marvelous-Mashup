@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8ae2d9b84e75483c8e57073399631966
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - gameState: {fileID: 11400000, guid: 576608ea411c25d4c93eb44a46e769c2, type: 2}
+  - characterCardLayout: {instanceID: 0}
+  - characterCardPrefab: {instanceID: 0}
+  - btnConfirm: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

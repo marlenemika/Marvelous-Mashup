@@ -1,0 +1,26 @@
+## generated folders without required files
+/**/.idea
+/**/out/
+/**/build/
+/**/target/
+/**/gen/
+/**/run/
+/**/.run/
+/**/_run/
+/**/logs/
+/**/.gradle/
+
+
+## intelliJ ##
+*.iml
+
+## Binaries ##
+*.bin
+*.class
+
+## Locks ##
+*.lock
+
+## excludes ##
+# keep .gitkeep files
+!**/.gitkeep

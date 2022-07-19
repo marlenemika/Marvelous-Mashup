@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90b3c875b2e540dfa74e427284c81d56, type: 3}
+  m_Name: MatchConfigObject
+  m_EditorClassIdentifier: 
+  maxRounds: 5
+  intMaxRounds: {fileID: 0}
+  maxRoundTime: 45
+  intMaxRoundTime: {fileID: 0}
+  maxGameTime: 0
+  intMaxGameTime: {fileID: 0}
+  maxAnimationTime: 0
+  intMaxAnimationTime: {fileID: 0}
+  spaceStoneCD: 2
+  intSpaceStoneCD: {fileID: 0}
+  mindStoneCD: 2
+  intMindStoneCD: {fileID: 0}
+  realityStoneCD: 2
+  intRealityStoneCD: {fileID: 0}
+  powerStoneCD: 2
+  intPowerStoneCD: {fileID: 0}
+  timeStoneCD: 2
+  intTimeStoneCD: {fileID: 0}
+  soulStoneCD: 2
+  intSoulStoneCD: {fileID: 0}
+  mindStoneDmg: 35
+  intMindStoneDmg: {fileID: 0}
+  maxPauseTime: 60
+  intMaxPauseTime: {fileID: 0}
+  maxResponseTime: 5
+  intMaxResponseTime: {fileID: 0}

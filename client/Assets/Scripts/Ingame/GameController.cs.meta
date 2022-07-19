@@ -1,0 +1,39 @@
+fileFormatVersion: 2
+guid: 0580c179ff9643cc827c361cedfc01d9
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - clientKeybindingsObject: {instanceID: 0}
+  - clientSettingsObject: {instanceID: 0}
+  - gridManager: {instanceID: 0}
+  - _infinityStoneInventoryManager: {instanceID: 0}
+  - hlgTurnOrder: {instanceID: 0}
+  - OwnTurnPrefab: {fileID: 6273975825060655872, guid: 899b0ed92eeee4d469d2b776357eb328, type: 3}
+  - EnemyTurnPrefab: {fileID: 6403269671001307001, guid: f6bebefbf3b214904bd45589c81239ce, type: 3}
+  - currentPlayerTextField: {instanceID: 0}
+  - currentCharacterTextField: {instanceID: 0}
+  - mpTextField: {instanceID: 0}
+  - apTextField: {instanceID: 0}
+  - currentActionTextField: {instanceID: 0}
+  - gameState: {instanceID: 0}
+  - pauseMenu: {instanceID: 0}
+  - popup: {instanceID: 0}
+  - volumeLevelSlider: {instanceID: 0}
+  - volumeLevelValue: {instanceID: 0}
+  - volumeActiveCheckbox: {instanceID: 0}
+  - lblMoveButton: {instanceID: 0}
+  - lblMeleeAttackButton: {instanceID: 0}
+  - lblRangeAttackButton: {instanceID: 0}
+  - lblFinishTurnButton: {instanceID: 0}
+  - lblPauseMenuButton: {instanceID: 0}
+  - moveKeybind: {instanceID: 0}
+  - meleeAttackKeybind: {instanceID: 0}
+  - rangeAttackKeybind: {instanceID: 0}
+  - finishTurnKeybind: {instanceID: 0}
+  - pauseMenuKeybind: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

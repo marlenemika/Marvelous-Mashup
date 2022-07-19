@@ -1,0 +1,24 @@
+{
+    "name": "Scripts",
+    "rootNamespace": "",
+    "references": [
+        "GUID:5bc136dadbe3172449cdf47142043a6c",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:78a68db0b16e96e899414d779fb2d78a"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "Newtonsoft.Json.dll",
+        "Newtonsoft.Json.Schema.dll",
+        "nunit.framework.dll",
+        "Ookii.Dialogs.dll",
+        "System.Windows.Forms.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

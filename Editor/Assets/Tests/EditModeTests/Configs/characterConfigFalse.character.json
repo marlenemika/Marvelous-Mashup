@@ -1,0 +1,104 @@
+{
+  "characters": [
+    {
+      "characterID": 1,
+      "name": "Rocket Raccoon",
+      "HP": 100,
+      "MP": 2,
+      "AP": 2,
+      "meleeDamage": 10,
+      "rangeCombatDamage": 30,
+      "rangeCombatReach": 5
+    },
+    {
+      "characterID": 2,
+      "name": "Quicksilver",
+      "HP": 100,
+      "MP": 6,
+      "AP": 1,
+      "meleeDamage": 10,
+      "rangeCombatDamage": 10,
+      "rangeCombatReach": 3
+    },
+    {
+      "characterID": 3,
+      "name": "Hulk",
+      "HP": 100,
+      "MP": 2,
+      "AP": 2,
+      "meleeDamage": 10,
+      "rangeCombatDamage": 30,
+      "rangeCombatReach": 5
+    },
+    {
+      "characterID": 4,
+      "name": "Black Widow",
+      "HP": 100,
+      "MP": 6,
+      "AP": 1,
+      "meleeDamage": 10,
+      "rangeCombatDamage": 10,
+      "rangeCombatReach": 3
+    },
+    {
+      "characterID": 5,
+      "name": "Hawkeye",
+      "HP": 100,
+      "MP": 6,
+      "AP": 1,
+      "meleeDamage": 10,
+      "rangeCombatDamage": 10,
+      "rangeCombatReach": 3
+    },
+    {
+      "characterID": 6,
+      "name": "Captain America",
+      "HP": 100,
+      "MP": 2,
+      "AP": 2,
+      "meleeDamage": 10,
+      "rangeCombatDamage": 30,
+      "rangeCombatReach": 5
+    },
+    {
+      "characterID": 7,
+      "name": "Spiderman",
+      "HP": 100,
+      "MP": 6,
+      "AP": 1,
+      "meleeDamage": 10,
+      "rangeCombatDamage": 10,
+      "rangeCombatReach": 3
+    },
+    {
+      "characterID": 8,
+      "name": "Dr. Strange",
+      "HP": 100,
+      "MP": 2,
+      "AP": 2,
+      "meleeDamage": 10,
+      "rangeCombatDamage": 30,
+      "rangeCombatReach": 5
+    },
+    {
+      "characterID": 9,
+      "name": "Iron Man",
+      "HP": 100,
+      "MP": 6,
+      "AP": 1,
+      "meleeDamage": 10,
+      "rangeCombatDamage": 10,
+      "rangeCombatReach": 3
+    },
+    {
+      "characterID": 10,
+      "name": "Black Panther",
+      "HP": 100,
+      "MP": 6,
+      "AP": 1,
+      "meleeDamage": 10,
+      "rangeCombatDamage": 10,
+      "rangeCombatReach": 3
+    }
+  ]
+}

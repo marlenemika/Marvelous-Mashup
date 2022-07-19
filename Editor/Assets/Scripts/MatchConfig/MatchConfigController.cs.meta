@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: a112f509b9814ec8a8cd549d18688193
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - matchConfig: {fileID: 11400000, guid: fdd951135ac350048900388bf3d3be8b, type: 2}
+  - configRepository: {fileID: 11400000, guid: f22b242dec6c76b47b38fdae6f83e7fd, type: 2}
+  - intMaxRounds: {instanceID: 0}
+  - intMaxRoundTime: {instanceID: 0}
+  - intMaxGameTime: {instanceID: 0}
+  - intMaxAnimationTime: {instanceID: 0}
+  - intSpaceStoneCD: {instanceID: 0}
+  - intMindStoneCD: {instanceID: 0}
+  - intRealityStoneCD: {instanceID: 0}
+  - intPowerStoneCD: {instanceID: 0}
+  - intTimeStoneCD: {instanceID: 0}
+  - intSoulStoneCD: {instanceID: 0}
+  - intMindStoneDMG: {instanceID: 0}
+  - intMaxPauseTime: {instanceID: 0}
+  - intMaxResponseTime: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

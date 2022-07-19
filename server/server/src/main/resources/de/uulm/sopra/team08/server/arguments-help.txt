@@ -1,0 +1,29 @@
+Arguments for Marvelous-Mashup-Server (Team08):
+
+  Argument         Shortcut  Description
+
+  --log-level      -l        Sets the Log-Level.
+                               0 = OFF
+                               1 = FATAL
+                               2 = ERROR
+                               3 = INFO
+                               4 = DEBUG
+                               5 = TRACE
+                               default = ALL
+
+  --verbose        -v        Sets Log-Level to the highest possible value.
+                             (This overrides the --log-level argument).
+
+  --port           -p        Sets the port.
+
+  --conf-match     -m        Specify the configuration file for the game.
+
+  --conf-chars     -c        Specify the configuration file for the characters.
+
+  --conf-scenario  -s        Specify the configuration file for the scenario.
+
+  --replay         -r        Specify the directory, where replays are saved.
+
+  --check-conf     -C        Just check the configurations and exit.
+
+  --help           -h        Print this help.
